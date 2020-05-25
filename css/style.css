@@ -80,7 +80,7 @@ body {
   height: 3.7em;
   padding: 10px 40px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   outline: none;
@@ -102,6 +102,7 @@ body {
   box-shadow: 0 5px 0 0 hsl(154, 59%, 45%);
   cursor: pointer;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .agree {
@@ -117,6 +118,10 @@ body {
 }
 
 @media (max-width: 860px) {
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+  }
+
   .wrapper {
     width: 90%;
     grid-template-columns: 1fr;
@@ -153,4 +158,46 @@ body {
   .message-text {
     line-height: 1.5;
   }
+}
+
+/* error styles */
+
+.form-control {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.form-control.error {
+  margin-bottom: 10px;
+}
+
+.form-control.error input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form-control img {
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  visibility: hidden;
+}
+
+.form-control.error img {
+  visibility: visible;
+}
+
+.form-control small {
+  color: var(--red);
+  font-size: 10px;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
 }

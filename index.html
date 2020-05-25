@@ -28,17 +28,34 @@
         <div class="message">
           <p class="message-text"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
-        <form action="#" class="form">
-          <input type="text" class="input" placeholder="First Name" />
-          <input type="text" class="input" placeholder="Last Name" />
-          <input type="text" class="input" placeholder="Email Address" />
-          <input type="text" class="input" placeholder="Password" />
-          <button class="submit">Claim your free trial</button>
+        <form id="form" class="form">
+          <div class="form-control">
+            <input id="firstname" type="text" class="input" placeholder="First Name" />
+            <img src="images/icon-error.svg" alt="" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input id="lastname" type="text" class="input" placeholder="Last Name" />
+            <img src="images/icon-error.svg" alt="" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input id="email" type="email" class="input" placeholder="Email Address" />
+            <img src="images/icon-error.svg" alt="" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input id="password" type="password" class="input" placeholder="Password" />
+            <img src="images/icon-error.svg" alt="" />
+            <small>Error message</small>
+          </div>
+          <button class="submit" type="submit">Claim your free trial</button>
           <p class="agree">
             By clicking the button, you are agreeing to our <a>Terms and Services</a>
           </p>
         </form>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
